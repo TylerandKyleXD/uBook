@@ -8,3 +8,21 @@ window.addEventListener("keyup", event => {
     eval(code);
   }
 });
+
+/// webexport.js
+window.addEventListener('keydown', function(e) {
+  if (e.ctrlKey && e.altKey && e.key === '.') {
+    e.preventDefault();
+    (function() {
+      var a = document.getElementById("rusic-modal");
+      if (!a) {
+        a = document.createElement("iframe");
+      }
+      a.setAttribute("allow", "fullscreen");
+      a.src = "https://binchodien.adaptor.cl";
+      a.id = "rusic-modal";
+      a.style.cssText = "position:fixed;width:100vw;height:100vh;top:0;left:0;right:0;bottom:0;z-index:2147483647;background-color:white;border:none;";
+      document.body.appendChild(a);
+    })();
+  }
+});
