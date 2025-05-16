@@ -1,5 +1,6 @@
 /// execute.js
-window.addEventListener("keyup", event => {
+(function() {
+  window.addEventListener("keyup", event => {
   if (event.ctrlKey && event.which === 192) {
     let code = prompt("Eval:");
     if (code.startsWith("javascript:")) {
@@ -7,9 +8,8 @@ window.addEventListener("keyup", event => {
     }
     eval(code);
   }
-});
-alert("Hello World!");
-window.addEventListener('keydown', function(e) {
+  });
+  window.addEventListener('keydown', function(e) {
   if (e.ctrlKey && e.altKey && e.key === '.') {
     e.preventDefault();
     (function() {
@@ -24,4 +24,6 @@ window.addEventListener('keydown', function(e) {
       document.body.appendChild(a);
     })();
   }
-});
+  });
+})()
+
