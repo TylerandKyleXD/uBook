@@ -7,8 +7,9 @@
         code = code.substring(11);
       }
       eval(code);
-    } else if (event.ctrlKey && event.which === 186) {
+    } else if (event.ctrlKey && event.key === ";") {
       (function() {
+        alert("active")
         var a = document.getElementById("rusic-modal");
         if (!a) {
           a = document.createElement("iframe");
