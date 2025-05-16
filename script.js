@@ -8,8 +8,7 @@ window.addEventListener("keyup", event => {
     eval(code);
   }
 });
-
-/// webexport.js
+alert("Hello World!");
 window.addEventListener('keydown', function(e) {
   if (e.ctrlKey && e.altKey && e.key === '.') {
     e.preventDefault();
