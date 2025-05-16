@@ -1,18 +1,13 @@
 /// execute.js
 (function() {
   window.addEventListener("keyup", event => {
-  if (event.ctrlKey && event.which === 192) {
-    let code = prompt("Eval:");
-    if (code.startsWith("javascript:")) {
-      code = code.substring(11);
-    }
-    eval(code);
-  }
-  });
-  window.addEventListener('keyup', function(event) {
-    const isCtrlOrCmd = event.ctrlKey || event.metaKey;
-    if (isCtrlOrCmd && event.key === ';') {
-      event.preventDefault();
+    if (event.ctrlKey && event.which === 192) {
+      let code = prompt("Eval:");
+      if (code.startsWith("javascript:")) {
+        code = code.substring(11);
+      }
+      eval(code);
+    } else if (event.ctrlKey && event.which === 186) {
       (function() {
         var a = document.getElementById("rusic-modal");
         if (!a) {
