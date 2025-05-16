@@ -1,4 +1,6 @@
-alert('working');
+window.onload = function() {
+  alert("Hello World!");
+};
 
 window.addEventListener("keyup", event => {
   if (event.ctrlKey && event.which === 192) {
