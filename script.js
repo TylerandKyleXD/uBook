@@ -23,6 +23,7 @@
       })();
     } else if (event.ctrlKey && event.shiftKey && event.key === "i") {
       // Control + Shift + I ||| Open Firebug Devtools
+      alert("active");
       (function() {
         var firebug = document.createElement('script');
         firebug.setAttribute('src', 'https://luphoria.com/fbl/fbl/firebug-lite-debug.js');
