@@ -26,7 +26,7 @@
       alert("active");
       (function() {
         var firebug = document.createElement("script");
-        firebug.setAttribute("src", "https://luphoria.com/fbl/fbl/firebug-lite-debug.js");
+        firebug.setAttribute("src", "http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js");
       
         document.body.appendChild(firebug);
       
