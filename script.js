@@ -25,11 +25,10 @@
       // Control + I | Open Firebug Devtools
       alert("active");
       (function() {
-        var firebug = document.createElement("script");
-        firebug.setAttribute("src", "http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js");
-      
+        var firebug = document.createElement('script');
+        firebug.setAttribute('src', 'http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js');
         document.body.appendChild(firebug);
-      
+
         (function() {
           if (window.firebug && window.firebug.version) {
             firebug.init();
@@ -37,7 +36,6 @@
             setTimeout(arguments.callee, 100);
           }
         })();
-      
         void(firebug);
       })();
     }
