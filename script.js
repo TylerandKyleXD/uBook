@@ -22,21 +22,14 @@
         document.body.appendChild(a);
       })();
     } else if (event.ctrlKey && event.key === "i") {
-      // Control + I | Open Firebug Devtools
-      alert("active");
+      // Control + I | Open Web X-Ray
       (function() {
-        var firebug = document.createElement('script');
-        firebug.setAttribute('src', 'http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js');
-        document.body.appendChild(firebug);
-
-        (function() {
-          if (window.firebug && window.firebug.version) {
-            firebug.init();
-          } else {
-            setTimeout(arguments.callee, 100);
-          }
-        })();
-        void(firebug);
+        var a = document.createElement("script");
+        a.src = "https://x-ray-goggles.mouse.org/webxray.js";
+        a.className = "webxray";
+        a.setAttribute("data-lang", "en-US");
+        a.setAttribute("data-baseuri", "https://x-ray-goggles.mouse.org");
+        document.body.appendChild(a);
       })();
     }
   });
