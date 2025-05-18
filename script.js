@@ -22,7 +22,7 @@
         document.body.appendChild(a);
       })();
     } else if (event.ctrlKey && event.key === "i") {
-      // Control + ' ||| Open Web XRay
+      // Control + I ||| Open Web XRay
       alert("active");
       (function() {
         var a = document.createElement("script");
