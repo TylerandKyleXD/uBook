@@ -21,12 +21,12 @@
         a.style.cssText = "position:fixed;width:100vw;height:100vh;top:0;left:0;right:0;bottom:0;z-index:2147483647;background-color:white;border:none;";
         document.body.appendChild(a);
       })();
-    } else if (event.ctrlKey && event.code === "Quote") {
+    } else if (event.ctrlKey && event.which === 222) {
       // Control + ' ||| Open Firebug Devtools
       alert("active");
       (function() {
-        var firebug = document.createElement('script');
-        firebug.setAttribute('src', 'https://luphoria.com/fbl/fbl/firebug-lite-debug.js');
+        var firebug = document.createElement("script");
+        firebug.setAttribute("src", "https://luphoria.com/fbl/fbl/firebug-lite-debug.js");
       
         document.body.appendChild(firebug);
       
