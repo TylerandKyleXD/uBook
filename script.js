@@ -1,7 +1,7 @@
 /// execute.js
 (function() {
   window.addEventListener("keyup", event => {
-    //Control + ~ ||| do JS
+    //Control + ~ | do JS
     if (event.ctrlKey && event.which === 192) {
       let code = prompt("Eval:");
       if (code.startsWith("javascript:")) {
@@ -9,7 +9,7 @@
       }
       eval(code);
     } else if (event.ctrlKey && event.key === ";") {
-      // Control + ; ||| Portable
+      // Control + ; | Portable
       (function() {
         var a = document.getElementById("rusic-modal");
         if (!a) {
@@ -22,7 +22,7 @@
         document.body.appendChild(a);
       })();
     } else if (event.ctrlKey && event.key === "i") {
-      // Control + ' ||| Open Firebug Devtools
+      // Control + I | Open Firebug Devtools
       alert("active");
       (function() {
         var firebug = document.createElement("script");
